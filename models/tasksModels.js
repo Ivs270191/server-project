@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 
+
 const taskSchema = mongoose.Schema({
     description: {
         type: String,
@@ -14,7 +15,8 @@ const taskSchema = mongoose.Schema({
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
-    }, role: {
+    },
+    role: {
         type: String,
         default: 'task'
     }
